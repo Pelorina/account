@@ -12,8 +12,7 @@ import org.hibernate.annotations.GenericGenerator;
 @ToString
 public class Customer extends BaseEntity{
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    @Column(name ="customer_id" )
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long customerId;
     private String name;
     private String email;
